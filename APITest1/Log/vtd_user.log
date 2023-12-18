@@ -1,0 +1,29 @@
+2023-12-14 14:04:17,088 [1] INFO  - Loaded appender: FileAppenderExternal
+2023-12-14 14:04:17,104 [1] INFO  - Loaded appender: UserLoggerAppender
+2023-12-14 14:04:17,119 [1] INFO  - Loaded appender: FileAppenderInternal
+2023-12-14 14:04:17,122 [1] INFO  - Loaded appender: FileAppenderExternal
+2023-12-14 14:04:17,122 [1] INFO  - Loaded appender: UserLoggerAppender
+2023-12-14 14:04:17,123 [1] INFO  - Loaded appender: FileAppenderInternal
+2023-12-14 14:04:18,036 [23] INFO  - Step 'Start' : Step 'Start' started
+2023-12-14 14:04:18,173 [23] INFO  - Step 'Start' ended successfully
+2023-12-14 14:04:18,173 [23] INFO  - Step 'Test Flow' : Step 'Test Flow' started
+2023-12-14 14:04:18,189 [23] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2023-12-14 14:04:18,189 [23] INFO  - Step 'GetFlights' : Step 'GetFlights' started
+2023-12-14 14:04:18,236 [23] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <GetFlights xmlns="HP.SOAQ.SampleApp">
+      <DepartureCity>London</DepartureCity>
+      <ArrivalCity>Los Angeles</ArrivalCity>
+      <FlightDate>2023-12-23T00:00:00+05:30</FlightDate>
+    </GetFlights>
+  </Body>
+</Envelope>
+
+2023-12-14 14:04:18,289 [23] INFO  - URL: http://localhost:8000/Flights_SOAP
+2023-12-14 14:04:20,338 [23] ERROR - Step 'GetFlights' : Unable to connect to the remote server
+2023-12-14 14:04:20,338 [23] ERROR - Step 'GetFlights' ended unsuccessfully
+2023-12-14 14:04:20,356 [23] INFO  - Step 'Iteration 1' ended successfully
+2023-12-14 14:04:20,360 [23] INFO  - Step 'Test Flow' ended successfully
